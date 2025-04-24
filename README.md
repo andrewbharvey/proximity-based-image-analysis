@@ -3,7 +3,7 @@
 Proximity Analysis Script
 
 Overview
-This R script analyzes the spatial proximity between two cell types (GFP+ and CD109+) in multichannel microscopy images. It segments objects in the green (GFP) and red (CD109) channels, computes nearest-neighbor distances from GFP+ to CD109+ cells, and generates annotated overlay images and a summary of proximity results. This script should be modified for alternate applications when analyzing different fluorescent labels. The script also visualizes the proximity distributions between control and knockout genotypes using boxplots and jittered points.
+This R script analyzes the spatial proximity between two cell types (GFP+ and CD109+) in multichannel microscopy images. It segments objects in the green (GFP) and red (CD109) channels, computes nearest-neighbor distances from GFP+ to CD109+ cells, and generates annotated overlay images and a summary of proximity results. This script should be modified for alternate applications when analyzing different fluorescent labels. The script also visualizes the proximity distributions between control and knockout genotypes using boxplots and jittered points. The threshold script is an alternate analysis to bin GFP+ objects based on a nearnest neighbor threshold, which for our purposes was within or beyond 22 pixels from nearest CD109+ neighbor. This can be modified to calculate numbers or areas of objects within or beyond a certain pixel threshold. 
 
 The following R packages are automatically installed (if missing):
 
